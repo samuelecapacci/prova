@@ -1,25 +1,19 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from "react";
+import "./App.css";
+import MyHeader from "./components/MyHeader";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <MyHeader
+          classHomeTitle={"mainTitleHome"}
+          bgColor={"#000"}
+          title={"My New React App"}
+          number={0}
+          myBoolean={false}
+          myArray={[1, 2, 3, 4, 5, 6]}
+        />
       </div>
     );
   }
